@@ -8,20 +8,23 @@ public class Jogador : MonoBehaviour
 
     public BoxCollider2D areaJogo;
 
-    // Start is called before the first frame update
-    void Start()
+    public GameObject projetilPrefab;
+
+    private void Update()
+    {
+        Atirar();
+
+        Movimentar();
+
+        AplicarAreaJogo();
+    }
+
+    private void Atirar()
     {
     }
 
-    // Update is called once per frame
-    void Update()
+    private void AplicarAreaJogo()
     {
-        // Movimentação do Jogador
-        var vertical = Input.GetAxis("Vertical");
-        var horizontal = Input.GetAxis("Horizontal");
-
-        transform.Translate(new Vector2(horizontal, vertical) * velocidade * Time.deltaTime);
-
         // Garantir que o jogador está dentro da área de jogo
 
         var position = areaJogo.transform.position;
@@ -38,5 +41,14 @@ public class Jogador : MonoBehaviour
             Mathf.Clamp(transform.position.x, limiteXMin, limiteXMax),
             Mathf.Clamp(transform.position.y, limiteYMin, limiteYMax)
         );
+    }
+
+    private void Movimentar()
+    {
+        // Movimentação do Jogador
+        var vertical = Input.GetAxis("Vertical");
+        var horizontal = Input.GetAxis("Horizontal");
+
+        transform.Translate(new Vector2(horizontal, vertical) * velocidade * Time.deltaTime);
     }
 }

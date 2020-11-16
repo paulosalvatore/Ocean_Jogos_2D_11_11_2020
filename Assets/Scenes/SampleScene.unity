@@ -681,6 +681,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 2
   areaJogo: {fileID: 1427279167}
+  projetilPrefab: {fileID: 5493801147014564841, guid: c74235f151f403442bba1ab6f3f8af82,
+    type: 3}
 --- !u!1 &2075463359
 GameObject:
   m_ObjectHideFlags: 0
