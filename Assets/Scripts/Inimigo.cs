@@ -19,4 +19,16 @@ public class Inimigo : MonoBehaviour
     {
         transform.Translate(Vector2.left * velocidade * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Projétil"))
+        {
+            // Destrói o GameObject do Projétil
+            Destroy(other.gameObject);
+
+            // Destrói o inimigo
+            Destroy(gameObject);
+        }
+    }
 }

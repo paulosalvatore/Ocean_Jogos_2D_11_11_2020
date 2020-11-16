@@ -643,6 +643,7 @@ GameObject:
   - component: {fileID: 1863209015}
   - component: {fileID: 1863209014}
   - component: {fileID: 1863209016}
+  - component: {fileID: 1863209017}
   m_Layer: 0
   m_Name: Jogador
   m_TagString: Untagged
@@ -730,6 +731,42 @@ MonoBehaviour:
   areaJogo: {fileID: 1427279167}
   projetilPrefab: {fileID: 5493801147014564841, guid: c74235f151f403442bba1ab6f3f8af82,
     type: 3}
+--- !u!60 &1863209017
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863209013}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.26, y: 0.21}
+    newSize: {x: 0.26, y: 0.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.06158475, y: 0.066220306}
+      - {x: -0.13431704, y: 0.07629321}
+      - {x: -0.11187017, y: 0.03303607}
+      - {x: -0.07546365, y: 0.018841518}
+      - {x: -0.1126436, y: 0.0107193645}
+      - {x: -0.10697615, y: -0.021976251}
+      - {x: -0.0855373, y: -0.044854205}
+      - {x: 0.11273217, y: -0.036220293}
+      - {x: 0.124243975, y: -0.008169547}
+      - {x: 0.09914577, y: 0.034090802}
+      - {x: 0.023952551, y: 0.053342335}
 --- !u!1 &2075463359
 GameObject:
   m_ObjectHideFlags: 0

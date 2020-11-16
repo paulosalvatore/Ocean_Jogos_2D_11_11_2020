@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5493801147014564840}
   m_Layer: 0
   m_Name: "Proj\xE9til"
-  m_TagString: Untagged
+  m_TagString: "Proj\xE9til"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
