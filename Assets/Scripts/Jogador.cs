@@ -21,6 +21,10 @@ public class Jogador : MonoBehaviour
 
     private void Atirar()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projetilPrefab, transform.position, transform.rotation);
+        }
     }
 
     private void AplicarAreaJogo()
