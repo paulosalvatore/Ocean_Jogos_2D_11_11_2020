@@ -490,6 +490,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5214a8cabde5bdc48bbe8b7d763287e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inimigoPrefab: {fileID: 2320651556430491317, guid: 2c3114ede90b1d3489f7da851002af0c,
+    type: 3}
+  delayGerarInimigos: 1
 --- !u!1 &1427279166
 GameObject:
   m_ObjectHideFlags: 0

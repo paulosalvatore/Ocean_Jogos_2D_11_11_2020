@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class GeradorInimigos : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject inimigoPrefab;
+
+    [Range(0f, 5f)]
+    public float delayGerarInimigos = 1f;
+
+    private void Start()
     {
-        
+        InvokeRepeating("Gerar", delayGerarInimigos, delayGerarInimigos);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Gerar()
     {
-        
+        Instantiate(inimigoPrefab, transform.position, transform.rotation);
     }
 }
