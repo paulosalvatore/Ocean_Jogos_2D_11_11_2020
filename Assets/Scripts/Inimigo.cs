@@ -39,7 +39,7 @@ public class Inimigo : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
