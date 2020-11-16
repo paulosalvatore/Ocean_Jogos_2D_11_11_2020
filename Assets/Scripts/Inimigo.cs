@@ -36,6 +36,10 @@ public class Inimigo : MonoBehaviour
             // Criar o prefab da explosão
             Instantiate(explosaoPrefab, transform.position, Quaternion.identity);
         }
+
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }
