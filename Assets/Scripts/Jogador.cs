@@ -33,7 +33,7 @@ public class Jogador : MonoBehaviour
 
     private void Atirar()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             Instantiate(projetilPrefab, transform.position, transform.rotation);
         }
