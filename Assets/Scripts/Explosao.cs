@@ -5,7 +5,7 @@ using UnityEngine;
 public class Explosao : MonoBehaviour
 {
     [Range(0f, 10f)]
-    public float delayDestruir = 1f;
+    public float delayDestruir = 0.4f;
 
     private void Start()
     {
