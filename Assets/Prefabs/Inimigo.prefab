@@ -156,6 +156,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 2
   delayDestruir: 5
+  explosaoPrefab: {fileID: 7735919447966404193, guid: 18d8c819ba5b8c24fa188564eb9f9873,
+    type: 3}
 --- !u!50 &-8171581227110196938
 Rigidbody2D:
   serializedVersion: 4

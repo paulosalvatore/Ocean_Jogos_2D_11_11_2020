@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Inimigo : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Inimigo : MonoBehaviour
 
     [Range(0f, 10f)]
     public float delayDestruir = 5f;
+
+    public GameObject explosaoPrefab;
 
     private void Start()
     {
@@ -29,6 +32,10 @@ public class Inimigo : MonoBehaviour
 
             // Destrói o inimigo
             Destroy(gameObject);
+
+            // Criar o prefab da explosão
+            Instantiate(explosaoPrefab, transform.position, Quaternion.identity);
+        }
         }
     }
 }
