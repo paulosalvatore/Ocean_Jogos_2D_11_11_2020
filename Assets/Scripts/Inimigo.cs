@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Inimigo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Range(0f, 20f)]
+    public float velocidade = 2f;
+
+    [Range(0f, 10f)]
+    public float delayDestruir = 5f;
+
+    private void Start()
     {
-        
+        Destroy(gameObject, delayDestruir);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        transform.Translate(Vector2.left * velocidade * Time.deltaTime);
     }
 }
