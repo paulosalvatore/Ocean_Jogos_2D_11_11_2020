@@ -493,6 +493,7 @@ MonoBehaviour:
   inimigoPrefab: {fileID: 2320651556430491317, guid: 2c3114ede90b1d3489f7da851002af0c,
     type: 3}
   delayGerarInimigos: 1
+  posicaoYAleatoria: 0.8
 --- !u!1 &1427279166
 GameObject:
   m_ObjectHideFlags: 0
