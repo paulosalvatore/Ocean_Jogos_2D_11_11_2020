@@ -13,8 +13,12 @@ public class Inimigo : MonoBehaviour
 
     public GameObject explosaoPrefab;
 
+    private Jogador jogadorScript;
+
     private void Start()
     {
+        jogadorScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
+
         Destroy(gameObject, delayDestruir);
     }
 
@@ -27,6 +31,8 @@ public class Inimigo : MonoBehaviour
     {
         if (other.CompareTag("Projétil"))
         {
+            jogadorScript.AdicionarPontos();
+
             // Destrói o GameObject do Projétil
             Destroy(other.gameObject);
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Jogador : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class Jogador : MonoBehaviour
 
     public GameObject projetilPrefab;
 
+    public Text pontosText;
+
+    private int pontos;
+
     private void Update()
     {
         Atirar();
@@ -17,6 +22,13 @@ public class Jogador : MonoBehaviour
         Movimentar();
 
         AplicarAreaJogo();
+    }
+
+    public void AdicionarPontos()
+    {
+        pontos = pontos + 1;
+
+        pontosText.text = "Pontos: " + pontos;
     }
 
     private void Atirar()
